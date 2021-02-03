@@ -1,0 +1,18 @@
+[
+    {
+        "guideImageName" : "muban_2_l",
+        "titleStr" : "Guide 1",
+        "infoStr" : "Guide info 1"
+    },
+    {
+        "guideImageName" : "muban_4_l",
+        "titleStr" : "Guide 2",
+        "infoStr" : "Guide info 2"
+    },
+    {
+        "guideImageName" : "muban_5_l",
+        "titleStr" : "Guide 3",
+        "infoStr" : "Guide info 3"
+    }
+    
+]

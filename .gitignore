@@ -1,0 +1,7 @@
+SWymSocialWidget.xcodeproj/xcuserdata/
+SWymSocialWidget.xcworkspace/
+Pods/
+*.swp
+Podfile.lock
+.DS_Store
+SWymSocialWidget.xcodeproj/project.xcworkspace/xcuserdata/

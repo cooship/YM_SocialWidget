@@ -1,0 +1,37 @@
+
+[
+    {
+        "widthSize" : "medium",
+        "thumbnail" : "muban_img_1_m",
+    },
+    {
+        "widthSize" : "medium",
+        "thumbnail" : "muban_img_2_m",
+    },
+    {
+        "widthSize" : "medium",
+        "thumbnail" : "muban_img_3_m",
+    },
+    {
+        "widthSize" : "medium",
+        "thumbnail" : "muban_img_4_m",
+    },
+    {
+        "widthSize" : "medium",
+        "thumbnail" : "muban_img_5_m",
+    },
+    {
+        "widthSize" : "medium",
+        "thumbnail" : "muban_img_6_m",
+    },
+    {
+        "widthSize" : "medium",
+        "thumbnail" : "muban_img_7_m",
+    },
+
+    {
+        "widthSize" : "medium",
+        "thumbnail" : "muban_img_8_m",
+    }
+
+]
