@@ -10,10 +10,14 @@ import UIKit
 
 
 struct SWWidgetItem: Codable {
+    var layoutType: String?
     var widthSize: String? = "small" // small medium large
     var thumbnail: String? = ""
+    var bgImgName: String?
+    var stickername: String?
+    var textColor: String?
+    
     var profileImgData: Data?
-    var bgImgData: Data?
     var userName: String?
     var fullName: String?
     var fansCount: String?

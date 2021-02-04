@@ -26,6 +26,8 @@ class SWWidgetView: UIView {
     let mediumCollection = SWMediumWidgetCollection()
     let largeCollection = SWLargeWidgetCollection()
     
+    var didSelectWidgetItemBlock: ((_ widgetItem: SWWidgetItem) -> Void)?
+    
     
     func showViewStatus(hasUser: Bool) {
         if hasUser {
@@ -194,17 +196,31 @@ extension SWWidgetView {
     }
     
     func setupContentCollection() {
-        
+        smallCollection.didSelectWidgetItemBlock = {
+            [weak self] item in
+            guard let `self` = self else {return}
+            self.didSelectWidgetItemBlock?(item)
+        }
         collectionBgView.addSubview(smallCollection)
         smallCollection.snp.makeConstraints {
             $0.top.bottom.right.left.equalToSuperview()
         }
         
+        mediumCollection.didSelectWidgetItemBlock = {
+            [weak self] item in
+            guard let `self` = self else {return}
+            self.didSelectWidgetItemBlock?(item)
+        }
         collectionBgView.addSubview(mediumCollection)
         mediumCollection.snp.makeConstraints {
             $0.top.bottom.right.left.equalToSuperview()
         }
         
+        largeCollection.didSelectWidgetItemBlock = {
+            [weak self] item in
+            guard let `self` = self else {return}
+            self.didSelectWidgetItemBlock?(item)
+        }
         collectionBgView.addSubview(largeCollection)
         largeCollection.snp.makeConstraints {
             $0.top.bottom.right.left.equalToSuperview()

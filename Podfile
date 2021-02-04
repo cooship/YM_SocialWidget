@@ -18,6 +18,7 @@ target 'SWymSocialWidget' do
   pod 'JXSegmentedView'
   pod 'Alamofire'
   pod 'SwiftyJSON'
+  pod 'Kingfisher'
 #  pod 'SQLite.swift'
   pod 'GRDB.swift'
   pod 'MoyaSugar'

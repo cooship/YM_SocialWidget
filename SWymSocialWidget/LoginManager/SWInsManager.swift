@@ -9,6 +9,7 @@ import UIKit
 import NoticeObserveKit
 import GRDB
 import SwiftyJSON
+import Kingfisher
 
 
 extension Notice.Names {
@@ -42,6 +43,7 @@ class InnerUserManager: NSObject, Codable {
     var currentUserLoginModel: InnerUserLoginModel?
     var currentUserInfo: InnerOriginal?
     
+    var currentIconImageData: Data?
     
     
 }
@@ -119,6 +121,25 @@ class UserDetailInfo {
                 debugPrint("success")
                 InnerUserManager.default.currentUserInfo = origin
                 InnerUserManager.default.currentUserInfo?.cookies = cookies
+                if let profileUrl = origin.profilePicUrl {
+                    InnerUserManager.default.currentIconImageData = nil
+                    KingfisherManager.shared.downloader.downloadImage(with: profileUrl, options: nil) { (result) in
+                        switch result {
+                        case let .success(image):
+                            InnerUserManager.default.currentIconImageData = image.image.jpegData(compressionQuality: 0.8)
+                            return
+                        case let .failure(error):
+                            return
+                        default:
+                            return
+                        }
+                    }
+                    
+                } else {
+                    InnerUserManager.default.currentIconImageData = nil
+                }
+                
+                
                 completion(true, nil)
             case let .failure(error):
                 HUD.error(error.errorDescription)

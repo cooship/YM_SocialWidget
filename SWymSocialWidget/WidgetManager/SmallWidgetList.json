@@ -3,35 +3,67 @@
     {
         "widthSize" : "small",
         "thumbnail" : "muban_img_1_s",
+        "layoutType" : "1",
+        "bgImgName" : "muban_bg_1",
+        "textColor" : "#FFFFFF",
+        "stickername" : "ins_muban_1"
     },
     {
         "widthSize" : "small",
         "thumbnail" : "muban_img_2_s",
+        "layoutType" : "2",
+        "bgImgName" : "muban_bg_2",
+        "textColor" : "#FFFFFF",
+        "stickername" : "ins_muban_2"
     },
     {
         "widthSize" : "small",
         "thumbnail" : "muban_img_3_s",
+        "layoutType" : "3",
+        "bgImgName" : "muban_bg_3",
+        "textColor" : "#000000",
+        "stickername" : "ins_muban_3"
     },
     {
         "widthSize" : "small",
         "thumbnail" : "muban_img_4_s",
+        "layoutType" : "4",
+        "bgImgName" : "muban_bg_4",
+        "textColor" : "#FFFFFF",
+        "stickername" : ""
     },
     {
         "widthSize" : "small",
         "thumbnail" : "muban_img_5_s",
+        "layoutType" : "5",
+        "bgImgName" : "muban_bg_5",
+        "textColor" : "#FFFFFF",
+        "stickername" : ""
     },
     {
         "widthSize" : "small",
         "thumbnail" : "muban_img_6_s",
+        "layoutType" : "6",
+        "bgImgName" : "muban_bg_6",
+        "textColor" : "#FFFFFF",
+        "stickername" : "ins_muban_6"
     },
     {
         "widthSize" : "small",
         "thumbnail" : "muban_img_7_s",
+        "layoutType" : "7",
+        "bgImgName" : "muban_bg_7",
+        "textColor" : "#000000",
+        "stickername" : "ins_muban_7"
     },
 
     {
         "widthSize" : "small",
         "thumbnail" : "muban_img_8_s",
+        "layoutType" : "8",
+        "bgImgName" : "muban_bg_8",
+        "textColor" : "#FFFFFF",
+        "stickername" : "ins_bg_muban_8"
     }
 
 ]

@@ -95,7 +95,8 @@ extension SWSmallWidgetCollection: UICollectionViewDelegateFlowLayout {
 
 extension SWSmallWidgetCollection: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        
+        let item = SWWidgetManager.default.smallList[indexPath.item]
+        didSelectWidgetItemBlock?(item)
     }
     
     func collectionView(_ collectionView: UICollectionView, didDeselectItemAt indexPath: IndexPath) {
