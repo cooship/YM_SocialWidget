@@ -26,6 +26,25 @@ class SWWidgetView: UIView {
     let mediumCollection = SWMediumWidgetCollection()
     let largeCollection = SWLargeWidgetCollection()
     
+    
+    func showViewStatus(hasUser: Bool) {
+        if hasUser {
+            loginBtn.isHidden = true
+            topUserNameLabel.isHidden = false
+            topUserNameLabel.text = "@\(InnerUserManager.default.currentUserInfo?.userName ?? "")"
+        } else {
+            loginBtn.isHidden = false
+            topUserNameLabel.isHidden = true
+        }
+    }
+    
+    
+    
+    
+    
+    
+    
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         setupView()
@@ -199,6 +218,25 @@ extension SWWidgetView {
 
 extension SWWidgetView {
     @objc func loginBtnClick(sender: UIButton) {
+        if let fatherVC = self.upVC {
+            WILoginHelper.default.showLoginPage(showClose: true, targetViewController: fatherVC) { (success, errorMsg) in
+                if success {
+                    debugPrint("\(self.className)")
+                    // save userlogin info to db
+                    InnerUserManager.default.saveAndUpdateCurrentUserInfoToDB()
+                    //
+                    InnerUserManager.default.loadCurrentUserDetailInfo { (success) in
+                        HUD.hide()
+                        if success {
+                            self.showViewStatus(hasUser: true)
+                        } else {
+                            self.showViewStatus(hasUser: false)
+                            HUD.error("fetch user info error!")
+                        }
+                    }
+                }
+            }
+        }
         
     }
     

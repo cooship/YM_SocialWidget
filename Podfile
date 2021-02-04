@@ -16,7 +16,11 @@ target 'SWymSocialWidget' do
   pod 'GPUImage'
   pod 'JXPagingView/Paging'
   pod 'JXSegmentedView'
-  
+  pod 'Alamofire'
+  pod 'SwiftyJSON'
+#  pod 'SQLite.swift'
+  pod 'GRDB.swift'
+  pod 'MoyaSugar'
 #  UI
   pod 'SnapKit'
 

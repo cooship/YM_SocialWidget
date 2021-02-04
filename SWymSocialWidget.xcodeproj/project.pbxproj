@@ -70,6 +70,15 @@
 		EB18F78725CA441E00C0984C /* SWGuideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB18F78625CA441E00C0984C /* SWGuideView.swift */; };
 		EB18F78A25CA531700C0984C /* GuideInfoList.json in Resources */ = {isa = PBXBuildFile; fileRef = EB18F78925CA531700C0984C /* GuideInfoList.json */; };
 		EB18F78D25CA584C00C0984C /* SWInsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB18F78C25CA584C00C0984C /* SWInsManager.swift */; };
+		EB18F79125CA707F00C0984C /* WIWebInstaLoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB18F79025CA707F00C0984C /* WIWebInstaLoginVC.swift */; };
+		EB18F79625CA710A00C0984C /* NetworkUtilManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB18F79525CA710A00C0984C /* NetworkUtilManager.swift */; };
+		EB18F7A225CA8D4800C0984C /* IGLInsRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = EB18F7A125CA8D4800C0984C /* IGLInsRequest.m */; };
+		EB18F7A925CA8DA900C0984C /* NormalHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = EB18F7A725CA8DA900C0984C /* NormalHelper.m */; };
+		EB18F7AC25CAA6FE00C0984C /* WILoginHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB18F7AB25CAA6FE00C0984C /* WILoginHelper.swift */; };
+		EB18F7CF25CAC50400C0984C /* InnerDBManager+UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB18F7CD25CAC50300C0984C /* InnerDBManager+UserInfo.swift */; };
+		EB18F7D025CAC50400C0984C /* InnerDBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB18F7CE25CAC50300C0984C /* InnerDBManager.swift */; };
+		EB18F7D425CAC57F00C0984C /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB18F7D225CAC57E00C0984C /* Request.swift */; };
+		EB18F7D525CAC57F00C0984C /* Request_Inner.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB18F7D325CAC57F00C0984C /* Request_Inner.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -140,6 +149,18 @@
 		EB18F78625CA441E00C0984C /* SWGuideView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWGuideView.swift; sourceTree = "<group>"; };
 		EB18F78925CA531700C0984C /* GuideInfoList.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = GuideInfoList.json; sourceTree = "<group>"; };
 		EB18F78C25CA584C00C0984C /* SWInsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWInsManager.swift; sourceTree = "<group>"; };
+		EB18F79025CA707F00C0984C /* WIWebInstaLoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WIWebInstaLoginVC.swift; sourceTree = "<group>"; };
+		EB18F79525CA710A00C0984C /* NetworkUtilManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkUtilManager.swift; sourceTree = "<group>"; };
+		EB18F79E25CA8D4700C0984C /* SWymSocialWidget-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SWymSocialWidget-Bridging-Header.h"; sourceTree = "<group>"; };
+		EB18F7A025CA8D4800C0984C /* IGLInsRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IGLInsRequest.h; sourceTree = "<group>"; };
+		EB18F7A125CA8D4800C0984C /* IGLInsRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IGLInsRequest.m; sourceTree = "<group>"; };
+		EB18F7A725CA8DA900C0984C /* NormalHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NormalHelper.m; sourceTree = "<group>"; };
+		EB18F7A825CA8DA900C0984C /* NormalHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NormalHelper.h; sourceTree = "<group>"; };
+		EB18F7AB25CAA6FE00C0984C /* WILoginHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WILoginHelper.swift; sourceTree = "<group>"; };
+		EB18F7CD25CAC50300C0984C /* InnerDBManager+UserInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "InnerDBManager+UserInfo.swift"; sourceTree = "<group>"; };
+		EB18F7CE25CAC50300C0984C /* InnerDBManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InnerDBManager.swift; sourceTree = "<group>"; };
+		EB18F7D225CAC57E00C0984C /* Request.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
+		EB18F7D325CAC57F00C0984C /* Request_Inner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Request_Inner.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -192,9 +213,11 @@
 		EB18F60325C9001000C0984C /* SWymSocialWidget */ = {
 			isa = PBXGroup;
 			children = (
+				EB18F79425CA70E600C0984C /* ToolStuff */,
 				EB18F77325C95DC600C0984C /* Extension */,
 				EB18F63C25C9017A00C0984C /* NiCai */,
 				EB18F75B25C939D600C0984C /* WidgetManager */,
+				EB18F78F25CA703200C0984C /* LoginManager */,
 				EB18F75A25C939C000C0984C /* DataManager */,
 				EB18F63625C9014400C0984C /* Main */,
 				EB18F63725C9014A00C0984C /* Root */,
@@ -224,6 +247,7 @@
 				EB18F60D25C9001200C0984C /* Assets.xcassets */,
 				EB18F60F25C9001200C0984C /* LaunchScreen.storyboard */,
 				EB18F61225C9001200C0984C /* Info.plist */,
+				EB18F79E25CA8D4700C0984C /* SWymSocialWidget-Bridging-Header.h */,
 			);
 			name = Root;
 			sourceTree = "<group>";
@@ -341,11 +365,9 @@
 		EB18F75A25C939C000C0984C /* DataManager */ = {
 			isa = PBXGroup;
 			children = (
-				EB18F78325CA3DFB00C0984C /* Keychain.swift */,
 				EB18F78025CA3DD400C0984C /* CoinManager.swift */,
 				EB18F76025C939F800C0984C /* DataManager.swift */,
 				EB18F78925CA531700C0984C /* GuideInfoList.json */,
-				EB18F78C25CA584C00C0984C /* SWInsManager.swift */,
 			);
 			path = DataManager;
 			sourceTree = "<group>";
@@ -395,6 +417,41 @@
 			path = Extension;
 			sourceTree = "<group>";
 		};
+		EB18F78F25CA703200C0984C /* LoginManager */ = {
+			isa = PBXGroup;
+			children = (
+				EB18F78C25CA584C00C0984C /* SWInsManager.swift */,
+				EB18F79025CA707F00C0984C /* WIWebInstaLoginVC.swift */,
+				EB18F7AB25CAA6FE00C0984C /* WILoginHelper.swift */,
+				EB18F7CE25CAC50300C0984C /* InnerDBManager.swift */,
+				EB18F7CD25CAC50300C0984C /* InnerDBManager+UserInfo.swift */,
+				EB18F7D325CAC57F00C0984C /* Request_Inner.swift */,
+				EB18F7D225CAC57E00C0984C /* Request.swift */,
+				EB18F7A625CA8D9D00C0984C /* StuffOC */,
+			);
+			path = LoginManager;
+			sourceTree = "<group>";
+		};
+		EB18F79425CA70E600C0984C /* ToolStuff */ = {
+			isa = PBXGroup;
+			children = (
+				EB18F78325CA3DFB00C0984C /* Keychain.swift */,
+				EB18F79525CA710A00C0984C /* NetworkUtilManager.swift */,
+			);
+			path = ToolStuff;
+			sourceTree = "<group>";
+		};
+		EB18F7A625CA8D9D00C0984C /* StuffOC */ = {
+			isa = PBXGroup;
+			children = (
+				EB18F7A025CA8D4800C0984C /* IGLInsRequest.h */,
+				EB18F7A125CA8D4800C0984C /* IGLInsRequest.m */,
+				EB18F7A825CA8DA900C0984C /* NormalHelper.h */,
+				EB18F7A725CA8DA900C0984C /* NormalHelper.m */,
+			);
+			path = StuffOC;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -428,6 +485,7 @@
 				TargetAttributes = {
 					EB18F60025C9001000C0984C = {
 						CreatedOnToolsVersion = 12.3;
+						LastSwiftMigration = 1230;
 					};
 				};
 			};
@@ -532,6 +590,7 @@
 				EB18F74C25C92F5B00C0984C /* SWWidgetView.swift in Sources */,
 				EB18F76125C939F800C0984C /* DataManager.swift in Sources */,
 				EB18F78D25CA584C00C0984C /* SWInsManager.swift in Sources */,
+				EB18F7D425CAC57F00C0984C /* Request.swift in Sources */,
 				EB18F66B25C9017A00C0984C /* InnTwoFactorLoginView.swift in Sources */,
 				EB18F68625C9017A00C0984C /* HightLigtingHelper.swift in Sources */,
 				EB18F66E25C9017A00C0984C /* Foundation+Extension.swift in Sources */,
@@ -543,20 +602,26 @@
 				EB18F75525C936BB00C0984C /* SWLargeWidgetCollection.swift in Sources */,
 				EB18F77B25C9609300C0984C /* UIKit+Simply.swift in Sources */,
 				EB18F75D25C939ED00C0984C /* SWWidgetManager.swift in Sources */,
+				EB18F79125CA707F00C0984C /* WIWebInstaLoginVC.swift in Sources */,
+				EB18F7AC25CAA6FE00C0984C /* WILoginHelper.swift in Sources */,
 				EB18F68725C9017A00C0984C /* HightLightingPriceManager.swift in Sources */,
+				EB18F7D525CAC57F00C0984C /* Request_Inner.swift in Sources */,
 				EB18F68425C9017A00C0984C /* InnLoginViewController.swift in Sources */,
 				EB18F77525C95DCE00C0984C /* HUDExtension.swift in Sources */,
 				EB18F60925C9001000C0984C /* ViewController.swift in Sources */,
 				EB18F77125C9571400C0984C /* SWSettingView.swift in Sources */,
+				EB18F7CF25CAC50400C0984C /* InnerDBManager+UserInfo.swift in Sources */,
 				EB18F63925C9016000C0984C /* SWymMainVC.swift in Sources */,
 				EB18F77825C95F7000C0984C /* UIApplication+URL.swift in Sources */,
 				EB18F67125C9017A00C0984C /* InnLoginChallengeView.swift in Sources */,
+				EB18F7A225CA8D4800C0984C /* IGLInsRequest.m in Sources */,
 				EB18F68825C9017A00C0984C /* DataEncoding.swift in Sources */,
 				EB18F68A25C9017A00C0984C /* HighLightingViewController.swift in Sources */,
 				EB18F66F25C9017A00C0984C /* UIKitExtension.swift in Sources */,
 				EB18F67425C9017A00C0984C /* InnLoginVerifyCodeView.swift in Sources */,
 				EB18F66A25C9017A00C0984C /* InnNativeWebLoginViewController.swift in Sources */,
 				EB18F78425CA3DFB00C0984C /* Keychain.swift in Sources */,
+				EB18F7A925CA8DA900C0984C /* NormalHelper.m in Sources */,
 				EB18F68525C9017A00C0984C /* HightLigtingUserManager.swift in Sources */,
 				EB18F60525C9001000C0984C /* AppDelegate.swift in Sources */,
 				EB18F66C25C9017A00C0984C /* VC+Route.swift in Sources */,
@@ -564,7 +629,9 @@
 				EB18F60725C9001000C0984C /* SceneDelegate.swift in Sources */,
 				EB18F67025C9017A00C0984C /* StringExtension.swift in Sources */,
 				EB18F67225C9017A00C0984C /* PublicFile.swift in Sources */,
+				EB18F7D025CAC50400C0984C /* InnerDBManager.swift in Sources */,
 				EB18F66D25C9017A00C0984C /* SwiftyTimer.swift in Sources */,
+				EB18F79625CA710A00C0984C /* NetworkUtilManager.swift in Sources */,
 				EB18F68B25C9017A00C0984C /* HightLightingExtension.swift in Sources */,
 				EB18F74F25C9367F00C0984C /* SWSmallWidgetCollection.swift in Sources */,
 				EB18F67325C9017A00C0984C /* InnRequestHelper.swift in Sources */,
@@ -715,6 +782,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = SWymSocialWidget/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -724,6 +792,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = youmai.SWymSocialWidget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SWymSocialWidget/SWymSocialWidget-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -735,6 +805,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = SWymSocialWidget/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -744,6 +815,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = youmai.SWymSocialWidget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SWymSocialWidget/SWymSocialWidget-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

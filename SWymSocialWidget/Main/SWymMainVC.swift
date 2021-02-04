@@ -33,7 +33,7 @@ class SWymMainVC: UIViewController {
         // he /*
         HightLigtingHelper.default.delegate = self
         // he */
-        
+        initDatabase()
         setupView()
         setupWidgetView()
         setupSettingView()
@@ -43,6 +43,26 @@ class SWymMainVC: UIViewController {
         setupBottomBtns()
         
         bottomBtnClick(sender: widgetBtn)
+        
+    }
+    
+    func initDatabase() {
+        InnerDBManager.default.prepareCommentUserListDatabase()
+        
+        InnerUserManager.default.loadCurrentUserLoginModelFromDB() {[weak self] success in
+            guard let `self` = self else {return}
+            HUD.hide()
+            if InnerUserManager.default.currentUserLoginModel == nil || InnerUserManager.default.currentUserInfo == nil {
+                DispatchQueue.main.async {
+                    // 没有当前用户数据 展示登陆按钮
+                    self.widgetView.showViewStatus(hasUser: false)
+                }
+            } else {
+                // begin fetch data
+                self.widgetView.showViewStatus(hasUser: true)
+                //
+            }
+        }
         
     }
     
