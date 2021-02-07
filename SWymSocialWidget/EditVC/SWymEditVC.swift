@@ -194,11 +194,11 @@ extension SWymEditVC {
             $0.top.equalTo(backBtn.snp.bottom).offset(20)
             $0.height.equalTo(260)
         }
-        widgetContentView.backgroundColor = .darkGray
+        widgetContentView.backgroundColor = .clear
         
         // toolViewBgView
         view.addSubview(toolViewBgView)
-        toolViewBgView.backgroundColor = .white
+        toolViewBgView.backgroundColor = .clear
         toolViewBgView.snp.makeConstraints {
             $0.left.right.equalToSuperview()
             $0.top.equalTo(widgetContentView.snp.bottom).offset(16)

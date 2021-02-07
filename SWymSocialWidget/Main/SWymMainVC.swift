@@ -8,7 +8,7 @@
 import UIKit
 import SnapKit
 import NoticeObserveKit
-
+import Alertift
 
 class SWymMainVC: UIViewController {
 
@@ -28,6 +28,9 @@ class SWymMainVC: UIViewController {
     let settingView = SWSettingView()
     let storeView = SWStoreView()
     let guideView = SWGuideView()
+    
+    let unlockAlertView: SWUnlockBgView = SWUnlockBgView()
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -79,17 +82,85 @@ class SWymMainVC: UIViewController {
     func initDatabase() {
         InnerDBManager.default.prepareCommentUserListDatabase()
         
-//        InnerUserManager.default.loadCurrentUserLoginModelFromDB() {[weak self] success in
-//            guard let `self` = self else {return}
-//            HUD.hide()
-//            self.updateWidtetViewStatus()
-//             
-//        }
+        InnerUserManager.default.loadCurrentUserLoginModelFromDB() {[weak self] success in
+            guard let `self` = self else {return}
+            HUD.hide()
+            self.updateWidtetViewStatus()
+             
+        }
         
     }
     
 }
 
+
+extension SWymMainVC {
+    func showUnlockBgView(currentUnlockId: String) {
+        if unlockAlertView.superview == nil {
+            view.addSubview(unlockAlertView)
+            unlockAlertView.snp.makeConstraints {
+                $0.top.right.left.bottom.equalToSuperview()
+            }
+            unlockAlertView.alpha = 0
+        }
+        
+        unlockAlertView.cancelBtnClickBlock = {
+            [weak self] in
+            guard let `self` = self else {return}
+            UIView.animate(withDuration: 0.3) {
+                [weak self] in
+                guard let `self` = self else {return}
+                self.unlockAlertView.alpha = 0
+            }
+        }
+        
+        unlockAlertView.okBtnClickBlock = {
+            UIView.animate(withDuration: 0.3) {
+                [weak self] in
+                guard let `self` = self else {return}
+                self.unlockAlertView.alpha = 0
+            }
+            DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 0.3) {
+                [weak self] in
+                guard let `self` = self else {return}
+                if CoinManager.default.coinCount >= CoinManager.default.coinCostCount {
+                    
+                    ITContentPurchasedUnlockManager.sharedInstance().unlockContentItem(withItemId: currentUnlockId) {
+                        DispatchQueue.main.async {
+                            [weak self] in
+                            guard let `self` = self else {return}
+                            Alertift.alert(title: "Unlock successfully", message: "")
+                                .action(.cancel("Ok"))
+                                .show(on: self, completion: nil)
+                            CoinManager.default.costCoin(coin: CoinManager.default.coinCostCount)
+                            self.widgetView.refreshContent()
+                        }
+                    }
+                    
+                } else {
+                    Alertift.alert(title: "Coins shortage.Click and Jump to Store Page.", message: "")
+                        .action(.cancel("Cancel"))
+                        .action(.default("Ok"), handler: {
+                            DispatchQueue.main.async {
+                                [weak self] in
+                                guard let `self` = self else {return}
+//                                self.present(GCStoreVC())
+                                self.bottomBtnClick(sender: self.storeBtn)
+                            }
+                        })
+                        .show(on: self, completion: nil)
+                }
+            }
+        }
+        UIView.animate(withDuration: 0.3) {
+            [weak self] in
+            guard let `self` = self else {return}
+            self.unlockAlertView.alpha = 1
+        }
+        
+        
+    }
+}
 
 extension SWymMainVC {
     func setupView() {
@@ -181,8 +252,15 @@ extension SWymMainVC {
 
 extension SWymMainVC {
     func clickWidget(item: SWWidgetItem) {
-        let editVC = SWymEditVC.init(widgetItem: item)
-        pushVC(editVC, animate: true)
+        
+        if ITContentPurchasedUnlockManager.sharedInstance().hasUnlockContent(withContentItemId: item.thumbnail ?? "") {
+            let editVC = SWymEditVC.init(widgetItem: item)
+            pushVC(editVC, animate: true)
+        } else {
+            showUnlockBgView(currentUnlockId: item.thumbnail ?? "")
+        }
+        
+        
     }
 }
 
@@ -243,12 +321,16 @@ extension SWymMainVC {
         }
         if sender == widgetBtn {
             showContentView(targetView: widgetView)
+            view.backgroundColor = UIColor(hexString: "#F9F9F7")
         } else if sender == guideBtn {
             showContentView(targetView: guideView)
+            view.backgroundColor = UIColor(hexString: "#FFFFFF")
         } else if sender == storeBtn {
             showContentView(targetView: storeView)
+            view.backgroundColor = UIColor(hexString: "#FFFFFF")
         } else if sender == settingBtn {
             showContentView(targetView: settingView)
+            view.backgroundColor = UIColor(hexString: "#FFFFFF")
         }
     }
      
@@ -344,25 +426,26 @@ class SWUnlockBgView: UIView {
         
         
         let bottomBgView = UIView()
-        bottomBgView.backgroundColor = .white
+        bottomBgView.backgroundColor = .clear
         addSubview(bottomBgView)
         bottomBgView.snp.makeConstraints {
             $0.left.right.bottom.equalToSuperview()
             $0.top.equalTo(safeAreaLayoutGuide.snp.bottom).offset(-370)
         }
-        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 0.15) {
-            DispatchQueue.main.async {
-                bottomBgView.roundCorners([.topLeft, .topRight], radius: 40)
-            }
+        let bgImgView = UIImageView()
+        bgImgView.image = UIImage.named("unlockbgimg")
+        bottomBgView.addSubview(bgImgView)
+        bgImgView.snp.makeConstraints {
+            $0.top.left.right.bottom.equalToSuperview()
         }
-        
+        bgImgView.contentMode = .scaleToFill
         
         let cancelBtn = UIButton(type: .custom)
         bottomBgView.addSubview(cancelBtn)
-        cancelBtn.setImage(UIImage(named: "delete_button"), for: .normal)
+        cancelBtn.setImage(UIImage(named: "unlock_back_ic"), for: .normal)
         cancelBtn.snp.makeConstraints {
-            $0.top.equalToSuperview().offset(5)
-            $0.right.equalToSuperview().offset(-5)
+            $0.top.equalToSuperview().offset(10)
+            $0.right.equalToSuperview().offset(-10)
             $0.width.equalTo(44)
             $0.height.equalTo(44)
         }
@@ -380,7 +463,7 @@ class SWUnlockBgView: UIView {
         }
         
         let titleLabel = UILabel()
-        titleLabel.textColor = .white
+        titleLabel.textColor = .black
         titleLabel.font = UIFont(name: "PingFangSC-Semibold", size: 16)
         titleLabel.textAlignment = .center
         
@@ -396,7 +479,7 @@ class SWUnlockBgView: UIView {
         
         let okBtn = UIButton(type: .custom)
         addSubview(okBtn)
-        okBtn.setTitle("Ok", for: .normal)
+        okBtn.setTitle("OK", for: .normal)
         okBtn.titleLabel?.font = UIFont(name: "Avenir-Heavy", size: 16)
         okBtn.setTitleColor(UIColor(hexString: "#FFFFFF"), for: .normal)
         okBtn.setBackgroundColor(UIColor(hexString: "#131313") ?? .white, for: .normal)

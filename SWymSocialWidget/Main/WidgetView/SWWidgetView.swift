@@ -43,7 +43,12 @@ class SWWidgetView: UIView {
     
     
     
-    
+    func refreshContent() {
+        smallCollection.collection.reloadData()
+        mediumCollection.collection.reloadData()
+        largeCollection.collection.reloadData()
+        
+    }
     
     
     

@@ -1,18 +1,23 @@
 [
     {
-        "guideImageName" : "muban_2_l",
-        "titleStr" : "Guide 1",
-        "infoStr" : "Guide info 1"
+        "guideImageName" : "guide_ic_1",
+        "titleStr" : "Back to homepage",
+        "infoStr" : ""
     },
     {
-        "guideImageName" : "muban_4_l",
-        "titleStr" : "Guide 2",
-        "infoStr" : "Guide info 2"
+        "guideImageName" : "guide_ic_2",
+        "titleStr" : "Long press to enter edit mode，tap the 「+」",
+        "infoStr" : ""
     },
     {
-        "guideImageName" : "muban_5_l",
-        "titleStr" : "Guide 3",
-        "infoStr" : "Guide info 3"
+        "guideImageName" : "guide_ic_3",
+        "titleStr" : "Find \"Followers' Widget Pro\" and click",
+        "infoStr" : ""
+    },
+    {
+        "guideImageName" : "guide_ic_4",
+        "titleStr" : "Set successfully",
+        "infoStr" : ""
     }
     
 ]

@@ -4,5 +4,5 @@
 
 #import "IGLInsRequest.h"
 #import "NormalHelper.h"
-
+#import "ITContentPurchasedUnlockManager.h"
 

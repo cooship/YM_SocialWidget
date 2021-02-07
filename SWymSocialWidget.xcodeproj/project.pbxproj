@@ -112,6 +112,8 @@
 		EB924F1325CBA34900920CCC /* SWymEditVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB924F1225CBA34900920CCC /* SWymEditVC.swift */; };
 		EB924F1C25CBA8AF00920CCC /* SWBgColorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB924F1B25CBA8AF00920CCC /* SWBgColorView.swift */; };
 		EB924F2625CBA8CD00920CCC /* SWTextToolView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB924F2525CBA8CD00920CCC /* SWTextToolView.swift */; };
+		EBA7B29D25CFB93B00B423C1 /* ITContentPurchasedUnlockManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EBA7B29C25CFB93B00B423C1 /* ITContentPurchasedUnlockManager.m */; };
+		EBA7B2A125CFB97F00B423C1 /* ITFreeContentItemList.plist in Resources */ = {isa = PBXBuildFile; fileRef = EBA7B2A025CFB97F00B423C1 /* ITFreeContentItemList.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -243,6 +245,9 @@
 		EB924F1B25CBA8AF00920CCC /* SWBgColorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWBgColorView.swift; sourceTree = "<group>"; };
 		EB924F2525CBA8CD00920CCC /* SWTextToolView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWTextToolView.swift; sourceTree = "<group>"; };
 		EBA7B23425CF7DB200B423C1 /* Configuration.storekit */ = {isa = PBXFileReference; lastKnownFileType = text; path = Configuration.storekit; sourceTree = "<group>"; };
+		EBA7B29B25CFB93B00B423C1 /* ITContentPurchasedUnlockManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ITContentPurchasedUnlockManager.h; sourceTree = "<group>"; };
+		EBA7B29C25CFB93B00B423C1 /* ITContentPurchasedUnlockManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ITContentPurchasedUnlockManager.m; sourceTree = "<group>"; };
+		EBA7B2A025CFB97F00B423C1 /* ITFreeContentItemList.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = ITFreeContentItemList.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -468,7 +473,10 @@
 			children = (
 				EB18F78025CA3DD400C0984C /* CoinManager.swift */,
 				EB18F76025C939F800C0984C /* DataManager.swift */,
+				EBA7B29B25CFB93B00B423C1 /* ITContentPurchasedUnlockManager.h */,
+				EBA7B29C25CFB93B00B423C1 /* ITContentPurchasedUnlockManager.m */,
 				EB18F78925CA531700C0984C /* GuideInfoList.json */,
+				EBA7B2A025CFB97F00B423C1 /* ITFreeContentItemList.plist */,
 			);
 			path = DataManager;
 			sourceTree = "<group>";
@@ -695,6 +703,7 @@
 				EB18F67525C9017A00C0984C /* ic_a_c@3x.png in Resources */,
 				EB18F67625C9017A00C0984C /* login.html in Resources */,
 				EB18F67925C9017A00C0984C /* ic_c_s@3x.png in Resources */,
+				EBA7B2A125CFB97F00B423C1 /* ITFreeContentItemList.plist in Resources */,
 				EB18F68025C9017A00C0984C /* detail.html in Resources */,
 				EB18F67F25C9017A00C0984C /* f000029293.png in Resources */,
 				EB18F60E25C9001200C0984C /* Assets.xcassets in Resources */,
@@ -836,6 +845,7 @@
 				EB18F66F25C9017A00C0984C /* UIKitExtension.swift in Sources */,
 				EB18F67425C9017A00C0984C /* InnLoginVerifyCodeView.swift in Sources */,
 				EB18F66A25C9017A00C0984C /* InnNativeWebLoginViewController.swift in Sources */,
+				EBA7B29D25CFB93B00B423C1 /* ITContentPurchasedUnlockManager.m in Sources */,
 				EB18F78425CA3DFB00C0984C /* Keychain.swift in Sources */,
 				EB18F7A925CA8DA900C0984C /* NormalHelper.m in Sources */,
 				EB18F68525C9017A00C0984C /* HightLigtingUserManager.swift in Sources */,
@@ -1030,8 +1040,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1.0.0.0;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = SWymSocialWidget/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1039,8 +1050,9 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0.0;
-				PRODUCT_BUNDLE_IDENTIFIER = youmai.SWymSocialWidget;
+				PRODUCT_BUNDLE_IDENTIFIER = com.strongmusalSocialkustom;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "SWymSocialWidget/SWymSocialWidget-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -1056,8 +1068,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1.0.0.0;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = SWymSocialWidget/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1067,6 +1080,7 @@
 				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.strongmusalSocialkustom;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "SWymSocialWidget/SWymSocialWidget-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -1079,8 +1093,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1.0.0.0;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = ProfileWidget/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1089,8 +1104,9 @@
 					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = 1.0.0;
-				PRODUCT_BUNDLE_IDENTIFIER = youmai.SWymSocialWidget.ProfileWidget;
+				PRODUCT_BUNDLE_IDENTIFIER = com.strongmusalSocialkustom.ProfileWidget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -1103,8 +1119,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1.0.0.0;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = ProfileWidget/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1115,6 +1132,7 @@
 				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.strongmusalSocialkustom.ProfileWidget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;

@@ -10,7 +10,8 @@ import SwiftUI
 import WidgetKit
 import UIKit
 
-let groupKey: String = "group.com.socialwidget"
+//group.com.strongmusalSocialkustom
+let groupKey: String = "group.com.strongmusalSocialkustom"
 
 enum WidgetGroupType: String {
     case profile

@@ -180,20 +180,21 @@ class GCGuideCell: UICollectionViewCell {
         guideImageV.snp.makeConstraints {
             $0.top.equalToSuperview().offset(10)
             $0.centerX.equalToSuperview()
-            $0.width.equalTo(180)
-            $0.height.equalTo(300)
+            $0.width.greaterThanOrEqualTo(180)
+            $0.height.equalTo(320)
         }
         
         titleLabel.textColor = UIColor(hexString: "#000000")
         titleLabel.font = UIFont(name: "Avenir-Heavy", size: 18)
+        titleLabel.numberOfLines = 2
         bgView.addSubview(titleLabel)
         titleLabel.textAlignment = .center
         titleLabel.snp.makeConstraints {
             $0.top.equalTo(guideImageV.snp.bottom).offset(20)
             $0.centerX.equalTo(guideImageV)
-            $0.left.equalTo(30)
+            $0.left.equalTo(50)
             $0.right.equalTo(-30)
-            $0.height.equalTo(40)
+            $0.height.equalTo(80)
         }
         
         infoLabel.textColor = UIColor(hexString: "#4D4D4D")

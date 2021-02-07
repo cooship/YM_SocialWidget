@@ -60,6 +60,13 @@ extension SWSmallWidgetCollection: UICollectionViewDataSource {
         cell.layer.shadowOffset = CGSize(width: 0, height: 2)
         cell.layer.shadowRadius = 8
         
+        if ITContentPurchasedUnlockManager.sharedInstance().hasUnlockContent(withContentItemId: item.thumbnail ?? "") {
+            cell.lockImageView.isHidden = true
+        } else {
+            cell.lockImageView.isHidden = false
+        }
+        
+        
         return cell
     }
     
@@ -80,7 +87,8 @@ extension SWSmallWidgetCollection: UICollectionViewDelegateFlowLayout {
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
-        return UIEdgeInsets(top: 10, left: 20, bottom: 10, right: 20)
+        let padding = ((UIScreen.width - 160 * 2 - 2) / 3)
+        return UIEdgeInsets(top: 10, left: padding, bottom: 10, right: padding)
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
@@ -131,8 +139,8 @@ class SmallWidgetCell: UICollectionViewCell {
         lockImageView.image = UIImage(named: "lock_ic")
         lockImageView.contentMode = .center
         lockImageView.snp.makeConstraints {
-            $0.bottom.equalToSuperview().offset(-5)
-            $0.right.equalToSuperview().offset(-5)
+            $0.bottom.equalToSuperview().offset(-10)
+            $0.right.equalToSuperview().offset(-10)
             $0.width.height.equalTo(20)
         }
         lockImageView.isHidden = true

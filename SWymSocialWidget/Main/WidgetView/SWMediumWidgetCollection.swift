@@ -59,7 +59,11 @@ extension SWMediumWidgetCollection: UICollectionViewDataSource {
         cell.layer.shadowColor = UIColor(hexString: "#EFEFEF")?.cgColor
         cell.layer.shadowOffset = CGSize(width: 0, height: 2)
         cell.layer.shadowRadius = 8
-        
+        if ITContentPurchasedUnlockManager.sharedInstance().hasUnlockContent(withContentItemId: item.thumbnail ?? "") {
+            cell.lockImageView.isHidden = true
+        } else {
+            cell.lockImageView.isHidden = false
+        }
         return cell
     }
     
