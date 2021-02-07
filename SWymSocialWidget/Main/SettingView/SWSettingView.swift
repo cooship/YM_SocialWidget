@@ -11,12 +11,12 @@ import StoreKit
 import Defaults
 import NoticeObserveKit
 
-let AppName: String = "Magic Girl Cam"
+let AppName: String = "Followers' Widget Pro"
 let purchaseUrl = ""
-let TermsofuseURLStr = "http://subsequent-use.surge.sh/Terms_of_use.htm"
-let PrivacyPolicyURLStr = "http://subsequent-use.surge.sh/Privacy_Agreement.htm"
+let TermsofuseURLStr = "http://jazzy-boat.surge.sh/Terms_of_use.htm"
+let PrivacyPolicyURLStr = "http://jazzy-boat.surge.sh/Privacy_Agreement.htm"
 
-let feedbackEmail: String = "magicgirlcambuild@126.com"
+let feedbackEmail: String = "getwidgetprocreate@yahoo.com"
 let AppAppStoreID: String = ""
 
 

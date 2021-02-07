@@ -1,7 +1,7 @@
 {
   "products" : [
     {
-      "displayPrice" : "0.99",
+      "displayPrice" : "1.99",
       "familyShareable" : false,
       "internalID" : "27192EE1",
       "localizations" : [
@@ -11,12 +11,12 @@
           "locale" : "en_US"
         }
       ],
-      "productID" : "com.temporary.id",
-      "referenceName" : null,
+      "productID" : "com.strongmusalSocialkustom.packoffirst",
+      "referenceName" : "First Pack",
       "type" : "Consumable"
     },
     {
-      "displayPrice" : "0.99",
+      "displayPrice" : "3.99",
       "familyShareable" : false,
       "internalID" : "79326E4F",
       "localizations" : [
@@ -26,12 +26,12 @@
           "locale" : "en_US"
         }
       ],
-      "productID" : "com.temporary.id",
-      "referenceName" : null,
+      "productID" : "com.strongmusalSocialkustom.packofsecond",
+      "referenceName" : "Second Pack",
       "type" : "Consumable"
     },
     {
-      "displayPrice" : "0.99",
+      "displayPrice" : "5.99",
       "familyShareable" : false,
       "internalID" : "328B2967",
       "localizations" : [
@@ -41,12 +41,12 @@
           "locale" : "en_US"
         }
       ],
-      "productID" : "com.temporary.id",
-      "referenceName" : null,
+      "productID" : "com.strongmusalSocialkustom.packofthird",
+      "referenceName" : "Third Pack",
       "type" : "Consumable"
     },
     {
-      "displayPrice" : "0.99",
+      "displayPrice" : "6.99",
       "familyShareable" : false,
       "internalID" : "E3E9EFAF",
       "localizations" : [
@@ -56,12 +56,12 @@
           "locale" : "en_US"
         }
       ],
-      "productID" : "com.temporary.id",
-      "referenceName" : null,
+      "productID" : "com.strongmusalSocialkustom.packoffourth",
+      "referenceName" : "Fourth Pack",
       "type" : "Consumable"
     },
     {
-      "displayPrice" : "0.99",
+      "displayPrice" : "8.99",
       "familyShareable" : false,
       "internalID" : "D4E9B0FF",
       "localizations" : [
@@ -71,12 +71,12 @@
           "locale" : "en_US"
         }
       ],
-      "productID" : "com.temporary.id",
-      "referenceName" : null,
+      "productID" : "com.strongmusalSocialkustom.packoffifth",
+      "referenceName" : "Fifth Pack",
       "type" : "Consumable"
     },
     {
-      "displayPrice" : "0.99",
+      "displayPrice" : "9.99",
       "familyShareable" : false,
       "internalID" : "2A88BE96",
       "localizations" : [
@@ -86,12 +86,12 @@
           "locale" : "en_US"
         }
       ],
-      "productID" : "com.temporary.id",
-      "referenceName" : null,
+      "productID" : "com.strongmusalSocialkustom.packofsixth",
+      "referenceName" : "Sixth Pack ",
       "type" : "Consumable"
     },
     {
-      "displayPrice" : "0.99",
+      "displayPrice" : "12.99",
       "familyShareable" : false,
       "internalID" : "16A23CB3",
       "localizations" : [
@@ -101,12 +101,12 @@
           "locale" : "en_US"
         }
       ],
-      "productID" : "com.temporary.id",
-      "referenceName" : null,
+      "productID" : "com.strongmusalSocialkustom.packofseventh",
+      "referenceName" : "Seventh Pack",
       "type" : "Consumable"
     },
     {
-      "displayPrice" : "0.99",
+      "displayPrice" : "14.99",
       "familyShareable" : false,
       "internalID" : "923A9FB4",
       "localizations" : [
@@ -116,8 +116,8 @@
           "locale" : "en_US"
         }
       ],
-      "productID" : "com.temporary.id",
-      "referenceName" : null,
+      "productID" : "com.strongmusalSocialkustom.packofeighth",
+      "referenceName" : "Eighth Pack ",
       "type" : "Consumable"
     }
   ],

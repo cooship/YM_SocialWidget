@@ -287,16 +287,16 @@ class StuffWidgetHelper {
     func defaultCurrentWidgetConfig() -> WidgetPackge {
         // small
         // "buildinName:" "sandboxPath:"
-        let smallbgColor = ThemeColor.init(bgImgName: "muban_img_l_default", normalColor: nil, gradientColor: nil)
+        let smallbgColor = ThemeColor.init(bgImgName: "muban_imgmoren_2_2", normalColor: nil, gradientColor: nil)
         let smallConfig = WidgetConfig.init(widgetIdName: "small_profile", bgColor: smallbgColor, layoutType: .layout0, sizeType: .small)
         
 
         // middel
-        let middelbgColor = ThemeColor.init(bgImgName: "muban_img_m_default", normalColor: nil, gradientColor: nil)
+        let middelbgColor = ThemeColor.init(bgImgName: "muban_imgmoren_2_4", normalColor: nil, gradientColor: nil)
         let middelConfig = WidgetConfig.init(widgetIdName: "middel_profile", bgColor: middelbgColor, layoutType: .layout0, sizeType: .middle)
         
         // large
-        let largebgColor = ThemeColor.init(bgImgName: "muban_img_l_default", normalColor: nil, gradientColor: nil)
+        let largebgColor = ThemeColor.init(bgImgName: "muban_imgmoren_4_4", normalColor: nil, gradientColor: nil)
         let largeConfig = WidgetConfig.init(widgetIdName: "large_profile", bgColor: largebgColor, layoutType: .layout0, sizeType: .large)
         
         let profilePackage = WidgetPackge.init(small: smallConfig, middle: middelConfig, large: largeConfig)

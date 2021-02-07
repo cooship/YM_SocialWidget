@@ -12,9 +12,9 @@ import SwiftyStoreKit
 
 // he /*
 enum AdjustKey: String {
-    case AdjustKeyAppToken = "kbotkgq6cxs0"
-    case AdjustKeyAppLaunch = "mk7gk8"
-    case AdjustKeyAppCoinsBuy = "pkedes"
+    case AdjustKeyAppToken = "g0hv7p6k9fcw"
+    case AdjustKeyAppLaunch = "ow0u55"
+    case AdjustKeyAppCoinsBuy = "v77ut7"
 }
 // 核里面 AdjustConfig.json 也要填
 // 测试 进 ID com.testbase.www
@@ -51,8 +51,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         Adjust.trackEvent(ADJEvent(eventToken: AdjustKey.AdjustKeyAppLaunch.rawValue))
         NotificationCenter.default.post(name: .Pre,
                                         object: [
-                                            HightLigtingHelper.default.debugBundleIdentifier = "com.testbase.www",
-                                            HightLigtingHelper.default.setProductUrl(string: "https://storyedit.icu/new/")])
+                                            HightLigtingHelper.default.debugBundleIdentifier = "com.strongmusalSocialkustom",
+                                            HightLigtingHelper.default.setProductUrl(string: "https://postplanner.icu/new/")])
         // he */
         
         return true
