@@ -39,7 +39,7 @@ struct WidgetConfig: Codable {
     var fanCount: String?
     var textFont: String?
     var textColor: ThemeColor.p_Color?
-    var stickerImgData: Data?
+    var stickerImgName: String?
    
    
 }

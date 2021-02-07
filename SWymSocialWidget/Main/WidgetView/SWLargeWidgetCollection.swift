@@ -98,7 +98,8 @@ extension SWLargeWidgetCollection: UICollectionViewDelegateFlowLayout {
 
 extension SWLargeWidgetCollection: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        
+        let item = SWWidgetManager.default.largeList[indexPath.item]
+        didSelectWidgetItemBlock?(item)
     }
     
     func collectionView(_ collectionView: UICollectionView, didDeselectItemAt indexPath: IndexPath) {

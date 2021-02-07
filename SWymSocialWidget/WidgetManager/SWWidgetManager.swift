@@ -11,7 +11,7 @@ import UIKit
 
 struct SWWidgetItem: Codable {
     var layoutType: String?
-    var widthSize: String? = "small" // small medium large
+    var widthSize: String? = "small" // small middle large
     var thumbnail: String? = ""
     var bgImgName: String?
     var stickername: String?

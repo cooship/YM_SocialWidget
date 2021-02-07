@@ -140,21 +140,28 @@ extension SWymEditVC {
         let sizeType = SizeStyle.init(rawValue: widgetItem.widthSize ?? "small") ?? .small
         let widgetPreviewConfig = processWidgetConfig()
         
-        let widgetPreview = StuffWidgetHelper.default.widgetPreivew(viewHeight: small_height, size: sizeType, widgetConfig: widgetPreviewConfig)
+        var previewHeight: CGFloat = small_height
+        
+        if sizeType == .large {
+            previewHeight = large_height
+        }
+        let widgetPreview = StuffWidgetHelper.default.widgetPreivew(viewHeight: previewHeight, size: sizeType, widgetConfig: widgetPreviewConfig)
         widgetPreview.frame = CGRect(x: 0, y: 0, width: widgetPreview.width, height: widgetPreview.height)
         widgetPreview.isUserInteractionEnabled = false
-        
+        widgetPreview.layer.cornerRadius = 20
+        widgetPreview.layer.masksToBounds = true
         widgetContentView.addSubview(widgetPreview)
         widgetPreview.center = CGPoint(x: UIScreen.width / 2, y: 260 / 2)
         
     }
     
     func processWidgetConfig() -> WidgetConfig {
+        //TODO: Widget Config
         var userName = "Widget"
         var fullName = "widget"
         var fanCountString = "10K"
         var profileIconData: Data? = UIImage(named: "ins_muban_6")!.jpegData(compressionQuality: 0.8)
-        let stickerImageData: Data? = UIImage(named: widgetItem.stickername ?? "")?.jpegData(compressionQuality: 0.8)
+        let stickerImageName: String? = widgetItem.stickername
         var bgImageColor = ThemeColor.init(bgImgName: widgetItem.bgImgName, normalColor: nil, gradientColor: nil)
         let layoutType: LayoutType = LayoutType.init(rawValue: widgetItem.layoutType?.int ?? 1) ?? .layout1
         
@@ -175,7 +182,7 @@ extension SWymEditVC {
             profileIconData = InnerUserManager.default.currentIconImageData
         }
         
-        let widgetPreviewConfig: WidgetConfig = WidgetConfig.init(widgetIdName: "\(layoutType)", bgColor: bgImageColor, layoutType: layoutType, sizeType: sizeType, userProfileImgData: profileIconData, userName: userName, fullName: fullName, fanCount: fanCountString, textFont: textFont, textColor: textColor, stickerImgData: stickerImageData)
+        let widgetPreviewConfig: WidgetConfig = WidgetConfig.init(widgetIdName: "\(layoutType)", bgColor: bgImageColor, layoutType: layoutType, sizeType: sizeType, userProfileImgData: profileIconData, userName: userName, fullName: fullName, fanCount: fanCountString, textFont: textFont, textColor: textColor, stickerImgName: stickerImageName)
         return widgetPreviewConfig
     }
     

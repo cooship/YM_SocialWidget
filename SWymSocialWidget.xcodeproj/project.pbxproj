@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		01D0793778262F91AE453CAD /* Pods_ProfileWidgetExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB4E99518D7D14F6E74D5F47 /* Pods_ProfileWidgetExtension.framework */; };
 		971A8CD682DDCA880BE794E3 /* Pods_SWymSocialWidget.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12BC736A8C6DF25A67C01BBC /* Pods_SWymSocialWidget.framework */; };
 		EB18F60525C9001000C0984C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB18F60425C9001000C0984C /* AppDelegate.swift */; };
 		EB18F60725C9001000C0984C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB18F60625C9001000C0984C /* SceneDelegate.swift */; };
@@ -140,7 +141,10 @@
 /* Begin PBXFileReference section */
 		12BC736A8C6DF25A67C01BBC /* Pods_SWymSocialWidget.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SWymSocialWidget.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A4DCFF80244BE43E74EEE00 /* Pods-SWymSocialWidget.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SWymSocialWidget.release.xcconfig"; path = "Target Support Files/Pods-SWymSocialWidget/Pods-SWymSocialWidget.release.xcconfig"; sourceTree = "<group>"; };
+		2E3CE2F11116F2B61FAA19C6 /* Pods-ProfileWidgetExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProfileWidgetExtension.release.xcconfig"; path = "Target Support Files/Pods-ProfileWidgetExtension/Pods-ProfileWidgetExtension.release.xcconfig"; sourceTree = "<group>"; };
 		8FD7CA72033D0784694F744E /* Pods-SWymSocialWidget.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SWymSocialWidget.debug.xcconfig"; path = "Target Support Files/Pods-SWymSocialWidget/Pods-SWymSocialWidget.debug.xcconfig"; sourceTree = "<group>"; };
+		96ECE0D2F313BDFE4860ECFD /* Pods-ProfileWidgetExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProfileWidgetExtension.debug.xcconfig"; path = "Target Support Files/Pods-ProfileWidgetExtension/Pods-ProfileWidgetExtension.debug.xcconfig"; sourceTree = "<group>"; };
+		BB4E99518D7D14F6E74D5F47 /* Pods_ProfileWidgetExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ProfileWidgetExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB18F60125C9001000C0984C /* SWymSocialWidget.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SWymSocialWidget.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB18F60425C9001000C0984C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EB18F60625C9001000C0984C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -238,6 +242,7 @@
 		EB924F1225CBA34900920CCC /* SWymEditVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWymEditVC.swift; sourceTree = "<group>"; };
 		EB924F1B25CBA8AF00920CCC /* SWBgColorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWBgColorView.swift; sourceTree = "<group>"; };
 		EB924F2525CBA8CD00920CCC /* SWTextToolView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWTextToolView.swift; sourceTree = "<group>"; };
+		EBA7B23425CF7DB200B423C1 /* Configuration.storekit */ = {isa = PBXFileReference; lastKnownFileType = text; path = Configuration.storekit; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -255,6 +260,7 @@
 			files = (
 				EB924EB325CB8B2100920CCC /* SwiftUI.framework in Frameworks */,
 				EB924EB125CB8B2100920CCC /* WidgetKit.framework in Frameworks */,
+				01D0793778262F91AE453CAD /* Pods_ProfileWidgetExtension.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,6 +273,7 @@
 				12BC736A8C6DF25A67C01BBC /* Pods_SWymSocialWidget.framework */,
 				EB924EB025CB8B2100920CCC /* WidgetKit.framework */,
 				EB924EB225CB8B2100920CCC /* SwiftUI.framework */,
+				BB4E99518D7D14F6E74D5F47 /* Pods_ProfileWidgetExtension.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -276,6 +283,8 @@
 			children = (
 				8FD7CA72033D0784694F744E /* Pods-SWymSocialWidget.debug.xcconfig */,
 				1A4DCFF80244BE43E74EEE00 /* Pods-SWymSocialWidget.release.xcconfig */,
+				96ECE0D2F313BDFE4860ECFD /* Pods-ProfileWidgetExtension.debug.xcconfig */,
+				2E3CE2F11116F2B61FAA19C6 /* Pods-ProfileWidgetExtension.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -339,6 +348,7 @@
 				EB18F60F25C9001200C0984C /* LaunchScreen.storyboard */,
 				EB18F61225C9001200C0984C /* Info.plist */,
 				EB18F79E25CA8D4700C0984C /* SWymSocialWidget-Bridging-Header.h */,
+				EBA7B23425CF7DB200B423C1 /* Configuration.storekit */,
 			);
 			name = Root;
 			sourceTree = "<group>";
@@ -619,6 +629,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EB924EBD25CB8B2300920CCC /* Build configuration list for PBXNativeTarget "ProfileWidgetExtension" */;
 			buildPhases = (
+				C6AE61F2391D6D0DD7C318B2 /* [CP] Check Pods Manifest.lock */,
 				EB924EAB25CB8B2100920CCC /* Sources */,
 				EB924EAC25CB8B2100920CCC /* Frameworks */,
 				EB924EAD25CB8B2100920CCC /* Resources */,
@@ -744,6 +755,28 @@
 			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-SWymSocialWidget-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C6AE61F2391D6D0DD7C318B2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ProfileWidgetExtension-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -1042,6 +1075,7 @@
 		};
 		EB924EBE25CB8B2300920CCC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 96ECE0D2F313BDFE4860ECFD /* Pods-ProfileWidgetExtension.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
@@ -1065,6 +1099,7 @@
 		};
 		EB924EBF25CB8B2300920CCC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2E3CE2F11116F2B61FAA19C6 /* Pods-ProfileWidgetExtension.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;

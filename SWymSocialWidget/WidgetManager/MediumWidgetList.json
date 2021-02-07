@@ -2,7 +2,7 @@
  
 [
     {
-        "widthSize" : "medium",
+        "widthSize" : "middle",
         "thumbnail" : "muban_img_1_m",
         "layoutType" : "1",
         "bgImgName" : "muban_bg_1",
@@ -10,7 +10,7 @@
         "stickername" : "ins_muban_1"
     },
     {
-        "widthSize" : "medium",
+        "widthSize" : "middle",
         "thumbnail" : "muban_img_2_m",
         "layoutType" : "2",
         "bgImgName" : "muban_bg_2",
@@ -18,7 +18,7 @@
         "stickername" : "ins_muban_2"
     },
     {
-        "widthSize" : "medium",
+        "widthSize" : "middle",
         "thumbnail" : "muban_img_3_m",
         "layoutType" : "3",
         "bgImgName" : "muban_bg_3",
@@ -26,7 +26,7 @@
         "stickername" : "ins_muban_3"
     },
     {
-        "widthSize" : "medium",
+        "widthSize" : "middle",
         "thumbnail" : "muban_img_4_m",
         "layoutType" : "4",
         "bgImgName" : "muban_bg_4",
@@ -34,7 +34,7 @@
         "stickername" : ""
     },
     {
-        "widthSize" : "medium",
+        "widthSize" : "middle",
         "thumbnail" : "muban_img_5_m",
         "layoutType" : "5",
         "bgImgName" : "muban_bg_5",
@@ -42,7 +42,7 @@
         "stickername" : ""
     },
     {
-        "widthSize" : "medium",
+        "widthSize" : "middle",
         "thumbnail" : "muban_img_6_m",
         "layoutType" : "6",
         "bgImgName" : "muban_bg_6",
@@ -50,7 +50,7 @@
         "stickername" : "ins_muban_6"
     },
     {
-        "widthSize" : "medium",
+        "widthSize" : "middle",
         "thumbnail" : "muban_img_7_m",
         "layoutType" : "7",
         "bgImgName" : "muban_bg_7",
@@ -59,7 +59,7 @@
     },
 
     {
-        "widthSize" : "medium",
+        "widthSize" : "middle",
         "thumbnail" : "muban_img_8_m",
         "layoutType" : "8",
         "bgImgName" : "muban_bg_8",

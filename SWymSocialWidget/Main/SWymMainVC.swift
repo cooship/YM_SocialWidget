@@ -79,12 +79,12 @@ class SWymMainVC: UIViewController {
     func initDatabase() {
         InnerDBManager.default.prepareCommentUserListDatabase()
         
-        InnerUserManager.default.loadCurrentUserLoginModelFromDB() {[weak self] success in
-            guard let `self` = self else {return}
-            HUD.hide()
-            self.updateWidtetViewStatus()
-             
-        }
+//        InnerUserManager.default.loadCurrentUserLoginModelFromDB() {[weak self] success in
+//            guard let `self` = self else {return}
+//            HUD.hide()
+//            self.updateWidtetViewStatus()
+//             
+//        }
         
     }
     

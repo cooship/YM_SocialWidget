@@ -36,6 +36,8 @@ struct BgColorImgView: View {
     }
 }
 
+ 
+
 struct WidgetViewLayout0: View {
     var config: WidgetConfig
     var currentDate: Date

@@ -95,7 +95,8 @@ extension SWMediumWidgetCollection: UICollectionViewDelegateFlowLayout {
 
 extension SWMediumWidgetCollection: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        
+        let item = SWWidgetManager.default.mediumList[indexPath.item]
+        didSelectWidgetItemBlock?(item)
     }
     
     func collectionView(_ collectionView: UICollectionView, didDeselectItemAt indexPath: IndexPath) {

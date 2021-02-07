@@ -23,9 +23,45 @@ struct WidgetFactory: View {
         } else {
             widget = config.large
         }
-        let view = WidgetViewLayout0.init(config: widget, currentDate: currentDate, style: sizeStyle)
-        return view
+        if let layoutType = widget.layoutType {
+            if layoutType == .layout0 {
+                let view = WidgetViewLayout0.init(config: widget, currentDate: currentDate, style: sizeStyle)
+                return AnyView(view)
+            } else if layoutType == .layout1 {
+                let view = WidgetViewLayout1.init(config: widget, currentDate: currentDate, style: sizeStyle)
+                return AnyView(view)
+            } else if layoutType == .layout2 {
+                let view = WidgetViewLayout1.init(config: widget, currentDate: currentDate, style: sizeStyle)
+                return AnyView(view)
+            } else if layoutType == .layout3 {
+                let view = WidgetViewLayout1.init(config: widget, currentDate: currentDate, style: sizeStyle)
+                return AnyView(view)
+            } else if layoutType == .layout4 {
+                let view = WidgetViewLayout1.init(config: widget, currentDate: currentDate, style: sizeStyle)
+                return AnyView(view)
+            } else if layoutType == .layout5 {
+                let view = WidgetViewLayout1.init(config: widget, currentDate: currentDate, style: sizeStyle)
+                return AnyView(view)
+            } else if layoutType == .layout6 {
+                let view = WidgetViewLayout1.init(config: widget, currentDate: currentDate, style: sizeStyle)
+                return AnyView(view)
+            } else if layoutType == .layout7 {
+                let view = WidgetViewLayout1.init(config: widget, currentDate: currentDate, style: sizeStyle)
+                return AnyView(view)
+            } else if layoutType == .layout8 {
+                let view = WidgetViewLayout1.init(config: widget, currentDate: currentDate, style: sizeStyle)
+                return AnyView(view)
+            } else {
+                let view = WidgetViewLayout1.init(config: widget, currentDate: currentDate, style: sizeStyle)
+                return AnyView(view)
+            }
+        } else {
+            let view = WidgetViewLayout0.init(config: widget, currentDate: currentDate, style: sizeStyle)
+            return AnyView(view)
+        }
         
+        let view = WidgetViewLayout0.init(config: widget, currentDate: currentDate, style: sizeStyle)
+        return AnyView(view)
     }
 }
 
@@ -35,7 +71,45 @@ struct WidgetFactoryPreview: View {
     var sizeStyle: SizeStyle
     var body: some View {
         
+        if let layoutType = widget.layoutType {
+            if layoutType == .layout0 {
+                let view = WidgetViewLayout0.init(config: widget, currentDate: currentDate, style: sizeStyle)
+                return AnyView(view)
+            } else if layoutType == .layout1 {
+                let view = WidgetViewLayout1.init(config: widget, currentDate: currentDate, style: sizeStyle)
+                return AnyView(view)
+            } else if layoutType == .layout2 {
+                let view = WidgetViewLayout2.init(config: widget, currentDate: currentDate, style: sizeStyle)
+                return AnyView(view)
+            } else if layoutType == .layout3 {
+                let view = WidgetViewLayout3.init(config: widget, currentDate: currentDate, style: sizeStyle)
+                return AnyView(view)
+            } else if layoutType == .layout4 {
+                let view = WidgetViewLayout4.init(config: widget, currentDate: currentDate, style: sizeStyle)
+                return AnyView(view)
+            } else if layoutType == .layout5 {
+                let view = WidgetViewLayout5.init(config: widget, currentDate: currentDate, style: sizeStyle)
+                return AnyView(view)
+            } else if layoutType == .layout6 {
+                let view = WidgetViewLayout6.init(config: widget, currentDate: currentDate, style: sizeStyle)
+                return AnyView(view)
+            } else if layoutType == .layout7 {
+                let view = WidgetViewLayout7.init(config: widget, currentDate: currentDate, style: sizeStyle)
+                return AnyView(view)
+            } else if layoutType == .layout8 {
+                let view = WidgetViewLayout8.init(config: widget, currentDate: currentDate, style: sizeStyle)
+                return AnyView(view)
+            } else {
+                let view = WidgetViewLayout1.init(config: widget, currentDate: currentDate, style: sizeStyle)
+                return AnyView(view)
+            }
+        } else {
+            let view = WidgetViewLayout0.init(config: widget, currentDate: currentDate, style: sizeStyle)
+            return AnyView(view)
+        }
+        
         let view = WidgetViewLayout0.init(config: widget, currentDate: currentDate, style: sizeStyle)
         return AnyView(view)
+        
     }
 }

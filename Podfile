@@ -19,6 +19,7 @@ target 'SWymSocialWidget' do
   pod 'Alamofire'
   pod 'SwiftyJSON'
   pod 'Kingfisher'
+  pod 'DynamicColor'
 #  pod 'SQLite.swift'
   pod 'GRDB.swift'
   pod 'MoyaSugar'
@@ -58,4 +59,13 @@ target 'SWymSocialWidget' do
     pod 'RxRelay'
     pod 'SnapKit'
     pod 'RxCocoa'
+end
+
+
+target 'ProfileWidgetExtension' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  pod 'DynamicColor'
+
 end
