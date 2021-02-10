@@ -63,6 +63,23 @@ extension InnerDBManager {
         }
     }
     
+    func deleteUserInfo(userId: String, completionBlock: (()->Void)) {
+        guard let queue = dbQueueCommentUserList else {
+            completionBlock()
+            return
+        }
+        do {
+            try queue.write { db in
+                try db.execute(sql: "DELETE FROM InnerCommentUserList WHERE userid=\(userId)")
+                
+            }
+            completionBlock()
+        } catch  {
+            completionBlock()
+            debugPrint(error)
+        }
+    }
+    
 }
 
 

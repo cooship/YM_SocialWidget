@@ -66,6 +66,18 @@ class SWymEditVC: UIViewController {
         }
         .invalidated(by: pool)
         
+        NotificationCenter.default.nok.observe(name: .logoutCurrentUserAccount) {[weak self] _ in
+            guard let `self` = self else {return}
+            self.updateContentStatus()
+        }
+        .invalidated(by: pool)
+        
+        NotificationCenter.default.nok.observe(name: .userProfileImgComplete) {[weak self] _ in
+            guard let `self` = self else {return}
+            self.updateContentStatus()
+        }
+        .invalidated(by: pool)
+        
     }
 
     
@@ -116,9 +128,9 @@ extension SWymEditVC {
     
     func updateContentStatus() {
         //TODO: 通知后调用
-        
         updateUserName()
-        updateWidtetContent()
+        self.updateWidtetContent()
+         
     }
     
     func updateUserName() {
@@ -328,6 +340,11 @@ extension SWymEditVC {
     }
     @objc func widgetBtnClick(sender: UIButton) {
         
+        if InnerUserManager.default.currentUserInfo == nil {
+            showLoginVC()
+            return
+        }
+        
         var widgetPackge = StuffWidgetHelper.default.fetchCurrentConfig(groupId: WidgetGroupType.profile.rawValue)
         let config = processWidgetConfig()
         if widgetItem.widthSize == "small" {
@@ -339,6 +356,11 @@ extension SWymEditVC {
         }
         
         StuffWidgetHelper.default.saveThemeConfigure(themeConfig: widgetPackge)
+        
+        showAlert(title: "Successfully", message: "", buttonTitles: ["OK"], highlightedButtonIndex: 0) { (index) in
+            
+        }
+        
     }
     @objc func loginBtnClick(sender: UIButton) {
         showLoginVC()

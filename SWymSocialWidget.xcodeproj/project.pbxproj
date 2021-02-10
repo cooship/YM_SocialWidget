@@ -114,6 +114,26 @@
 		EB924F2625CBA8CD00920CCC /* SWTextToolView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB924F2525CBA8CD00920CCC /* SWTextToolView.swift */; };
 		EBA7B29D25CFB93B00B423C1 /* ITContentPurchasedUnlockManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EBA7B29C25CFB93B00B423C1 /* ITContentPurchasedUnlockManager.m */; };
 		EBA7B2A125CFB97F00B423C1 /* ITFreeContentItemList.plist in Resources */ = {isa = PBXBuildFile; fileRef = EBA7B2A025CFB97F00B423C1 /* ITFreeContentItemList.plist */; };
+		EBA7B32325D0D67A00B423C1 /* Frijole-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EBA7B31925D0D67900B423C1 /* Frijole-Regular.ttf */; };
+		EBA7B32425D0D67A00B423C1 /* Frijole-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EBA7B31925D0D67900B423C1 /* Frijole-Regular.ttf */; };
+		EBA7B32525D0D67A00B423C1 /* Phosphate.ttc in Resources */ = {isa = PBXBuildFile; fileRef = EBA7B31A25D0D67900B423C1 /* Phosphate.ttc */; };
+		EBA7B32625D0D67A00B423C1 /* Phosphate.ttc in Resources */ = {isa = PBXBuildFile; fileRef = EBA7B31A25D0D67900B423C1 /* Phosphate.ttc */; };
+		EBA7B32725D0D67A00B423C1 /* NewYorkExtraLarge-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = EBA7B31B25D0D67A00B423C1 /* NewYorkExtraLarge-Bold.otf */; };
+		EBA7B32825D0D67A00B423C1 /* NewYorkExtraLarge-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = EBA7B31B25D0D67A00B423C1 /* NewYorkExtraLarge-Bold.otf */; };
+		EBA7B32925D0D67A00B423C1 /* PoiretOne-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EBA7B31C25D0D67A00B423C1 /* PoiretOne-Regular.ttf */; };
+		EBA7B32A25D0D67A00B423C1 /* PoiretOne-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EBA7B31C25D0D67A00B423C1 /* PoiretOne-Regular.ttf */; };
+		EBA7B32B25D0D67A00B423C1 /* Didot.ttc in Resources */ = {isa = PBXBuildFile; fileRef = EBA7B31D25D0D67A00B423C1 /* Didot.ttc */; };
+		EBA7B32C25D0D67A00B423C1 /* Didot.ttc in Resources */ = {isa = PBXBuildFile; fileRef = EBA7B31D25D0D67A00B423C1 /* Didot.ttc */; };
+		EBA7B32D25D0D67A00B423C1 /* Quentin.otf in Resources */ = {isa = PBXBuildFile; fileRef = EBA7B31E25D0D67A00B423C1 /* Quentin.otf */; };
+		EBA7B32E25D0D67A00B423C1 /* Quentin.otf in Resources */ = {isa = PBXBuildFile; fileRef = EBA7B31E25D0D67A00B423C1 /* Quentin.otf */; };
+		EBA7B32F25D0D67A00B423C1 /* TW-Fancy-Free.otf in Resources */ = {isa = PBXBuildFile; fileRef = EBA7B31F25D0D67A00B423C1 /* TW-Fancy-Free.otf */; };
+		EBA7B33025D0D67A00B423C1 /* TW-Fancy-Free.otf in Resources */ = {isa = PBXBuildFile; fileRef = EBA7B31F25D0D67A00B423C1 /* TW-Fancy-Free.otf */; };
+		EBA7B33125D0D67A00B423C1 /* HACKED.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EBA7B32025D0D67A00B423C1 /* HACKED.ttf */; };
+		EBA7B33225D0D67A00B423C1 /* HACKED.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EBA7B32025D0D67A00B423C1 /* HACKED.ttf */; };
+		EBA7B33325D0D67A00B423C1 /* SF-Pro-Text-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = EBA7B32125D0D67A00B423C1 /* SF-Pro-Text-Semibold.otf */; };
+		EBA7B33425D0D67A00B423C1 /* SF-Pro-Text-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = EBA7B32125D0D67A00B423C1 /* SF-Pro-Text-Semibold.otf */; };
+		EBA7B33525D0D67A00B423C1 /* DIGITAL-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EBA7B32225D0D67A00B423C1 /* DIGITAL-Regular.ttf */; };
+		EBA7B33625D0D67A00B423C1 /* DIGITAL-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EBA7B32225D0D67A00B423C1 /* DIGITAL-Regular.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -248,6 +268,16 @@
 		EBA7B29B25CFB93B00B423C1 /* ITContentPurchasedUnlockManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ITContentPurchasedUnlockManager.h; sourceTree = "<group>"; };
 		EBA7B29C25CFB93B00B423C1 /* ITContentPurchasedUnlockManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ITContentPurchasedUnlockManager.m; sourceTree = "<group>"; };
 		EBA7B2A025CFB97F00B423C1 /* ITFreeContentItemList.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = ITFreeContentItemList.plist; sourceTree = "<group>"; };
+		EBA7B31925D0D67900B423C1 /* Frijole-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Frijole-Regular.ttf"; sourceTree = "<group>"; };
+		EBA7B31A25D0D67900B423C1 /* Phosphate.ttc */ = {isa = PBXFileReference; lastKnownFileType = file; path = Phosphate.ttc; sourceTree = "<group>"; };
+		EBA7B31B25D0D67A00B423C1 /* NewYorkExtraLarge-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NewYorkExtraLarge-Bold.otf"; sourceTree = "<group>"; };
+		EBA7B31C25D0D67A00B423C1 /* PoiretOne-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PoiretOne-Regular.ttf"; sourceTree = "<group>"; };
+		EBA7B31D25D0D67A00B423C1 /* Didot.ttc */ = {isa = PBXFileReference; lastKnownFileType = file; path = Didot.ttc; sourceTree = "<group>"; };
+		EBA7B31E25D0D67A00B423C1 /* Quentin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Quentin.otf; sourceTree = "<group>"; };
+		EBA7B31F25D0D67A00B423C1 /* TW-Fancy-Free.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "TW-Fancy-Free.otf"; sourceTree = "<group>"; };
+		EBA7B32025D0D67A00B423C1 /* HACKED.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = HACKED.ttf; sourceTree = "<group>"; };
+		EBA7B32125D0D67A00B423C1 /* SF-Pro-Text-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Semibold.otf"; sourceTree = "<group>"; };
+		EBA7B32225D0D67A00B423C1 /* DIGITAL-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DIGITAL-Regular.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -477,6 +507,7 @@
 				EBA7B29C25CFB93B00B423C1 /* ITContentPurchasedUnlockManager.m */,
 				EB18F78925CA531700C0984C /* GuideInfoList.json */,
 				EBA7B2A025CFB97F00B423C1 /* ITFreeContentItemList.plist */,
+				EBA7B31825D0D63F00B423C1 /* Font */,
 			);
 			path = DataManager;
 			sourceTree = "<group>";
@@ -609,6 +640,23 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		EBA7B31825D0D63F00B423C1 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				EBA7B31D25D0D67A00B423C1 /* Didot.ttc */,
+				EBA7B32225D0D67A00B423C1 /* DIGITAL-Regular.ttf */,
+				EBA7B31925D0D67900B423C1 /* Frijole-Regular.ttf */,
+				EBA7B32025D0D67A00B423C1 /* HACKED.ttf */,
+				EBA7B31B25D0D67A00B423C1 /* NewYorkExtraLarge-Bold.otf */,
+				EBA7B31A25D0D67900B423C1 /* Phosphate.ttc */,
+				EBA7B31C25D0D67A00B423C1 /* PoiretOne-Regular.ttf */,
+				EBA7B31E25D0D67A00B423C1 /* Quentin.otf */,
+				EBA7B32125D0D67A00B423C1 /* SF-Pro-Text-Semibold.otf */,
+				EBA7B31F25D0D67A00B423C1 /* TW-Fancy-Free.otf */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -693,28 +741,38 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EBA7B33525D0D67A00B423C1 /* DIGITAL-Regular.ttf in Resources */,
 				EB18F76725C93D6300C0984C /* MediumWidgetList.json in Resources */,
+				EBA7B32925D0D67A00B423C1 /* PoiretOne-Regular.ttf in Resources */,
 				EB18F67A25C9017A00C0984C /* ic_c_us@3x.png in Resources */,
 				EB18F78A25CA531700C0984C /* GuideInfoList.json in Resources */,
 				EB18F68325C9017A00C0984C /* ic_c_c@3x.png in Resources */,
 				EB18F61125C9001200C0984C /* LaunchScreen.storyboard in Resources */,
+				EBA7B33125D0D67A00B423C1 /* HACKED.ttf in Resources */,
 				EB18F67D25C9017A00C0984C /* ic_c_s@2x.png in Resources */,
+				EBA7B32B25D0D67A00B423C1 /* Didot.ttc in Resources */,
 				EB18F68925C9017A00C0984C /* AdjustConfig.json in Resources */,
 				EB18F67525C9017A00C0984C /* ic_a_c@3x.png in Resources */,
 				EB18F67625C9017A00C0984C /* login.html in Resources */,
 				EB18F67925C9017A00C0984C /* ic_c_s@3x.png in Resources */,
 				EBA7B2A125CFB97F00B423C1 /* ITFreeContentItemList.plist in Resources */,
 				EB18F68025C9017A00C0984C /* detail.html in Resources */,
+				EBA7B32D25D0D67A00B423C1 /* Quentin.otf in Resources */,
 				EB18F67F25C9017A00C0984C /* f000029293.png in Resources */,
 				EB18F60E25C9001200C0984C /* Assets.xcassets in Resources */,
 				EB18F67725C9017A00C0984C /* ic_a_c@2x.png in Resources */,
 				EB18F68225C9017A00C0984C /* InnLoginSubviews.xib in Resources */,
+				EBA7B32725D0D67A00B423C1 /* NewYorkExtraLarge-Bold.otf in Resources */,
+				EBA7B32525D0D67A00B423C1 /* Phosphate.ttc in Resources */,
 				EB18F68125C9017A00C0984C /* ic_c_c@2x.png in Resources */,
 				EB18F67E25C9017A00C0984C /* log_in_close_ic@2x.png in Resources */,
 				EB18F76A25C93D8000C0984C /* LargetWidgetList.json in Resources */,
+				EBA7B32F25D0D67A00B423C1 /* TW-Fancy-Free.otf in Resources */,
 				EB18F67825C9017A00C0984C /* log_in_close_ic@3x.png in Resources */,
+				EBA7B32325D0D67A00B423C1 /* Frijole-Regular.ttf in Resources */,
 				EB18F67B25C9017A00C0984C /* dialog-main.css in Resources */,
 				EB18F76425C93D5100C0984C /* SmallWidgetList.json in Resources */,
+				EBA7B33325D0D67A00B423C1 /* SF-Pro-Text-Semibold.otf in Resources */,
 				EB18F60C25C9001000C0984C /* Main.storyboard in Resources */,
 				EB18F67C25C9017A00C0984C /* ic_c_us@2x.png in Resources */,
 			);
@@ -724,7 +782,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EBA7B33025D0D67A00B423C1 /* TW-Fancy-Free.otf in Resources */,
 				EB924EB825CB8B2300920CCC /* Assets.xcassets in Resources */,
+				EBA7B33425D0D67A00B423C1 /* SF-Pro-Text-Semibold.otf in Resources */,
+				EBA7B32825D0D67A00B423C1 /* NewYorkExtraLarge-Bold.otf in Resources */,
+				EBA7B33625D0D67A00B423C1 /* DIGITAL-Regular.ttf in Resources */,
+				EBA7B32C25D0D67A00B423C1 /* Didot.ttc in Resources */,
+				EBA7B32425D0D67A00B423C1 /* Frijole-Regular.ttf in Resources */,
+				EBA7B33225D0D67A00B423C1 /* HACKED.ttf in Resources */,
+				EBA7B32A25D0D67A00B423C1 /* PoiretOne-Regular.ttf in Resources */,
+				EBA7B32E25D0D67A00B423C1 /* Quentin.otf in Resources */,
+				EBA7B32625D0D67A00B423C1 /* Phosphate.ttc in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1040,9 +1108,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1.0.0.0;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 8KZ9UTXX7B;
 				INFOPLIST_FILE = SWymSocialWidget/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1050,7 +1119,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.strongmusalSocialkustom;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fei.test.888888;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "SWymSocialWidget/SWymSocialWidget-Bridging-Header.h";
@@ -1068,9 +1137,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1.0.0.0;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 8KZ9UTXX7B;
 				INFOPLIST_FILE = SWymSocialWidget/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1078,7 +1148,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.strongmusalSocialkustom;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fei.test.888888;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "SWymSocialWidget/SWymSocialWidget-Bridging-Header.h";
@@ -1093,9 +1163,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1.0.0.0;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 8KZ9UTXX7B;
 				INFOPLIST_FILE = ProfileWidget/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1104,7 +1175,7 @@
 					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = 1.0.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.strongmusalSocialkustom.ProfileWidget;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fei.test.888888.ProfileWidget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
@@ -1119,9 +1190,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1.0.0.0;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 8KZ9UTXX7B;
 				INFOPLIST_FILE = ProfileWidget/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1130,7 +1202,7 @@
 					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = 1.0.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.strongmusalSocialkustom.ProfileWidget;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fei.test.888888.ProfileWidget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;

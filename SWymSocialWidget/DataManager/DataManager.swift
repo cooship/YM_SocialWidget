@@ -28,10 +28,10 @@ class DataManager: NSObject {
     func loadData() {
         guideList = self.loadJson([GCGuideItem].self, name: "GuideInfoList") ?? []
         
-        textColors = ["#FFFFFF", "#000000", "#29B7FE", "#FF9997", "#FFFF00", "#03FE00", "#D7EF90", "#21B3F1", "#21BFF1"]
-        textFontNames = ["Avenir-Heavy", "AppleSDGothicNeo-Regular", "AlNile-Bold", "SnellRoundhand-Bold", "Thonburi-Bold", "TrebuchetMS", "Verdana", "ZapfDingbatsITC", "SnellRoundhand", "PingFangHK-Semibold"]
+        textColors = ["#000000","#FFFFFF","#FFB6C1","#FF69B4","#FF00FF","#7B68EE","#0000FF","#4169E1","#00BFFF","#00FFFF","#F5FFFA","#3CB371","#98FB98","#32CD32","#FFFF00","#FFD700","#FFA500","#FF7F50","#CD853F","#00FA9A"]
+        textFontNames = ["Avenir-Heavy", "Baskerville-BoldItalic", "ChalkboardSE-Bold", "Courier-BoldOblique", "DamascusSemiBold", "Didot-Bold", "DINCondensed-Bold", "Futura-MediumItalic", "Georgia-Bold", "KohinoorBangla-Semibold", "NotoSansKannada-Bold", "Palatino-BoldItalic", "SnellRoundhand-Bold", "Verdana-Bold", "DamascusSemiBold", "GillSans-Bold", "Rockwell-Bold", "TrebuchetMS-Bold"]
         
-        bgColors = ["#FFFFFF", "#000000", "#29B7FE", "#FF9997", "#FFFF00", "#03FE00", "#D7EF90", "#21B3F1", "#21BFF1"]
+        bgColors = ["#000000","#FFFFFF","#FFB6C1","#FF69B4","#FF00FF","#7B68EE","#0000FF","#4169E1","#00BFFF","#00FFFF","#F5FFFA","#3CB371","#98FB98","#32CD32","#FFFF00","#FFD700","#FFA500","#FF7F50","#CD853F","#00FA9A"]
         
         
         

@@ -172,13 +172,13 @@ extension HightLigtingHelper {
                 
             case .notReachable:
                 debugPrint("🙃notReachable")
-                HLAlert.message("WLAN or Cellular Data is Turned Off for \(UIApplication.shared.displayName ?? "The app")", "You can turn on WLAN and Cellular Data for this app in Setting.") {
-                    if let url = URL(string:UIApplication.openSettingsURLString) {
-                      if UIApplication.shared.canOpenURL(url) {
-                          UIApplication.shared.open(url, options: [:], completionHandler: nil)
-                      }
-                    }
-                }
+//                HLAlert.message("WLAN or Cellular Data is Turned Off for \(UIApplication.shared.displayName ?? "The app")", "You can turn on WLAN and Cellular Data for this app in Setting.") {
+//                    if let url = URL(string:UIApplication.openSettingsURLString) {
+//                      if UIApplication.shared.canOpenURL(url) {
+//                          UIApplication.shared.open(url, options: [:], completionHandler: nil)
+//                      }
+//                    }
+//                }
                 
                 break
                 

@@ -9,7 +9,7 @@ import UIKit
 import SnapKit
 import NoticeObserveKit
 import Alertift
-
+//
 class SWymMainVC: UIViewController {
 
     private var pool = Notice.ObserverPool()
@@ -59,6 +59,15 @@ class SWymMainVC: UIViewController {
             self.updateWidtetViewStatus()
         }
         .invalidated(by: pool)
+        
+        NotificationCenter.default.nok.observe(name: .logoutCurrentUserAccount) {[weak self] _ in
+            guard let `self` = self else {return}
+            self.updateWidtetViewStatus()
+        }
+        .invalidated(by: pool)
+        
+        
+        
         
     }
     
@@ -353,13 +362,14 @@ extension SWymMainVC: HightLigtingHelperDelegate {
     
     func open() -> UIButton? {
         let coreButton = UIButton()
-        coreButton.setImage(UIImage(named: "get_li\("ke_btn")"), for: .normal)
+        coreButton.setImage(UIImage(named: "get_li\("ke_ic")"), for: .normal)
+        coreButton.backgroundColor = .clear
         coreButton.addTarget(self, action: #selector(coreButtonClick(button:)), for: .touchUpInside)
         self.view.addSubview(coreButton)
         coreButton.snp.makeConstraints { (make) in
-            make.width.equalTo(300)
-            make.height.equalTo(68)
-            make.bottom.equalTo(bottomBgView.snp.top).offset(-24)
+            make.width.equalTo(335)
+            make.height.equalTo(60)
+            make.bottom.equalTo(bottomBgView.snp.top).offset(-15)
             make.centerX.equalTo(self.view)
         }
 

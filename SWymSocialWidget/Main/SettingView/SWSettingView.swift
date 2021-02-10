@@ -10,6 +10,8 @@ import MessageUI
 import StoreKit
 import Defaults
 import NoticeObserveKit
+import ZKProgressHUD
+
 
 let AppName: String = "Followers' Widget Pro"
 let purchaseUrl = ""
@@ -257,8 +259,46 @@ extension SWSettingView {
     }
     @objc func logoutBtnBtnClick(sender: UIButton) {
         
+        DispatchQueue.main.async {
+            [weak self] in
+            guard let `self` = self else {return}
+            debugPrint("\(self.className)")
+            if InnerUserManager.default.currentUserInfo == nil {
+                ZKProgressHUD.showInfo("Please log in first", autoDismissDelay: 2.0)
+
+            } else {
+                InnerUserManager.default.logoutCurrentAccount()
+                
+                HUD.success("Logout successfully!")
+                DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 1) {
+                    self.showLoginVC()
+                }
+                
+            }
+        }
     }
     
+    func showLoginVC() {
+        if let fatherVC = self.upVC {
+            WILoginHelper.default.showLoginPage(showClose: true, targetViewController: fatherVC) { (success, errorMsg) in
+                if success {
+                    debugPrint("\(self.className)")
+                    // save userlogin info to db
+                    InnerUserManager.default.saveAndUpdateCurrentUserInfoToDB()
+                    //
+                    InnerUserManager.default.loadCurrentUserDetailInfo { (success) in
+                        HUD.hide()
+                        if success {
+                            
+                        } else {
+                            
+                            HUD.error("fetch user info error!")
+                        }
+                    }
+                }
+            }
+        }
+    }
     
     
 }

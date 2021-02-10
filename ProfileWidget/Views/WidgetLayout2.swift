@@ -66,7 +66,7 @@ struct WidgetViewLayout2: View {
                             ZStack {
                                 Circle()
                                     .foregroundColor(.white)
-                                    .frame(width: 60, height: 60, alignment: .center)
+                                    .frame(width: 64, height: 64, alignment: .center)
                                 Image(uiImage: UIImage(data: profileData) ?? UIImage(named: "ins_muban_6") ?? UIImage())
                                     .resizable()
                                     .frame(width: 56, height: 56, alignment: .center)

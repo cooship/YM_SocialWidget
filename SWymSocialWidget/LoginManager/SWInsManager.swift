@@ -17,6 +17,8 @@ extension Notice.Names {
         Notice.Name<Any?>(name: "fetchUserDetailInfoSuccess")
     static let logoutCurrentUserAccount =
     Notice.Name<Any?>(name: "logoutCurrentUserAccount")
+    static let userProfileImgComplete =
+    Notice.Name<Any?>(name: "userProfileImgComplete")
 }
 
  
@@ -90,8 +92,14 @@ extension InnerUserManager {
     
     
     func logoutCurrentAccount() {
+        
+        let userId = currentUserLoginModel?.userProfileInfo.userid?.string ?? ""
+        InnerDBManager.default.deleteUserInfo(userId: userId) {
+            
+        }
         currentUserLoginModel = nil
         currentUserInfo = nil
+        
         Notice.Center.default.post(name: .logoutCurrentUserAccount, with: nil)
     }
     
@@ -127,6 +135,7 @@ class UserDetailInfo {
                         switch result {
                         case let .success(image):
                             InnerUserManager.default.currentIconImageData = image.image.jpegData(compressionQuality: 0.8)
+                            Notice.Center.default.post(name: .userProfileImgComplete, with: nil)
                             return
                         case let .failure(error):
                             return

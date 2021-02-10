@@ -20,8 +20,60 @@
 	<string>$(MARKETING_VERSION)</string>
 	<key>CFBundleVersion</key>
 	<string>$(CURRENT_PROJECT_VERSION)</string>
+	<key>LSApplicationQueriesSchemes</key>
+	<array>
+		<string>fbapi</string>
+		<string>fbapi20130214</string>
+		<string>fbapi20130410</string>
+		<string>fbapi20130702</string>
+		<string>fbapi20131010</string>
+		<string>fbapi20131219</string>
+		<string>fbapi20140410</string>
+		<string>fbapi20140116</string>
+		<string>fbapi20150313</string>
+		<string>fbapi20150629</string>
+		<string>fbapi20160328</string>
+		<string>fbauth</string>
+		<string>fb-messenger-share-api</string>
+		<string>fbauth2</string>
+		<string>fbshareextension</string>
+	</array>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+	</dict>
+	<key>NSCameraUsageDescription</key>
+	<string>App needs your camera permission to take photo and edit it background, add stickers, text and other effect.</string>
+	<key>NSPhotoLibraryAddUsageDescription</key>
+	<string>App needs your photo gallery permission to choose photo and edit it background, add stickers, text and other effect.</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>App needs your photo gallery permission to choose and save photo and edit it background, add stickers, text and other effect.</string>
+	<key>UIAppFonts</key>
+	<array>
+		<string>Pilgiche.ttf</string>
+		<string>NewYorkMedium-Regular.otf</string>
+		<string>SF-Pro-Text-Bold.otf</string>
+		<string>SF-Pro-Text-Medium.otf</string>
+		<string>SF-Pro-Text-Regular.otf</string>
+		<string>SF-Pro-Text-Semibold.otf</string>
+		<string>Avenir.ttc</string>
+		<string>BalooBhai-Regular.ttf</string>
+		<string>Didot.ttc</string>
+		<string>DIGITAL-Regular.ttf</string>
+		<string>Frijole-Regular.ttf</string>
+		<string>HACKED.ttf</string>
+		<string>Helvetica.ttc</string>
+		<string>Monoton-Regular.ttf</string>
+		<string>Montserrat-Bold.otf</string>
+		<string>NewYorkExtraLarge-Bold.otf</string>
+		<string>Phosphate.ttc</string>
+		<string>PoiretOne-Regular.ttf</string>
+		<string>TW-Fancy-Free.otf</string>
+		<string>Quentin.otf</string>
+	</array>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>
@@ -62,5 +114,7 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>UIUserInterfaceStyle</key>
+	<string>Light</string>
 </dict>
 </plist>

@@ -142,7 +142,7 @@ extension SWTextToolView: UICollectionViewDelegateFlowLayout {
         if collectionView == collectionColor {
             return CGSize(width: 32, height: 32)
         } else {
-            return CGSize(width: 60, height: 32)
+            return CGSize(width: 50, height: 32)
         }
         
         
